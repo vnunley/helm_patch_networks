@@ -32,7 +32,9 @@ class helm_patch:
                 self.jsonFile["arp_tempo"]
                 ),
             helm_setting("beats_per_minute",
-                self.jsonFile["beats_per_minute"], .334, 5.0)
+                self.jsonFile["beats_per_minute"], .334, 5.0),
+            helm_setting("cross_modulation",
+                self.jsonFile["cross_modulation"] 0.0, 0.5)
         ]
         # Beats per minute: min .334 max 5 
         # Cross modulation: min 0 max 0.5
